@@ -1,0 +1,308 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: calibri;
+
+}
+
+
+/*header*/
+
+header {
+
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 1em 2em;
+    position: relative;
+}
+
+header:before {
+
+    content: '';
+    width: 200px;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.logo img {
+    width: 3.5em;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.nav-list {
+
+    display: flex;
+    align-items: center;
+    list-style:none;
+    font-size: 1.5em;
+
+}
+
+.nav-list a {
+
+    color: gray;
+}
+
+.nav-list a:hover {
+
+    color: #148260;
+}
+
+.nav-list .active a {
+
+    color: white;
+}
+
+
+.nav-item {
+    margin-left: 2em;
+
+}
+
+.active {
+    position: relative;
+    color: white;
+    z-index: 10;
+}
+
+.active::before {
+
+    content: '';
+    position: absolute;
+    left: -.8em;
+    bottom: -.3em;
+    background-color: #148260;
+    width: 4em;
+    height: 40px;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+/*Conteúdo top*/
+
+h2 {
+
+    font-size: 4em;
+    color: #148260;
+    line-height: 1;
+}
+
+h3 {
+
+    font-size: 2em;
+    color: #148260;
+}
+
+
+section {
+
+    width: 80%;
+    margin: 10em auto;
+
+}
+
+.desenho-cadastro {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px red solid;
+}
+
+.desenho {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px blue solid;
+}
+
+.desenho h2 span {
+
+    background-color: #148260 ;
+    padding: 0 20px;
+    color: white;
+    border-radius: 10px 10px 10px 0px;
+}
+
+
+
+.desenho img {
+
+}
+
+.cadastro {
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px orange solid;
+  
+}
+
+.logo2 {
+
+    width: 40%;
+
+}
+
+.botao-cadastro {
+
+    border: none;
+    width: 70%;
+    height: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px 10px 10px 0px;
+    background-color:  #148260;
+    align-self: center;
+    box-shadow: 0px 7px 0px 0px rgba(232,235,237,1);
+    position: relative;
+    transition: .5s;
+}
+
+.botao-cadastro:hover {
+
+
+    box-shadow: 0px 7px 0px 0px rgb(142, 147, 150);
+    cursor: pointer;
+
+}
+
+
+
+
+.botao-cadastro::before {
+
+        content: '';
+        width: 150px;
+        height: 1px;
+        background-color: gray;
+        position: absolute;
+        bottom: -2em;
+
+}
+
+.cadastro-box1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+   
+}
+
+
+.cadastro-box2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+ 
+  
+}
+
+.cadastro-box2 a{
+
+    width: 37%;
+    padding: 5px;
+    border-radius: 10px 10px 10px 0px;
+    border: 2px  rgba(232,235,237,1)  solid;
+    box-shadow: 0px 10px 0px 0px rgba(232,235,237,1);
+    position: relative;
+    transition: .5s;
+
+}
+
+.cadastro-box2 a:hover {
+
+    box-shadow: 0px 7px 0px 0px  #148260;
+    cursor: pointer;
+
+}
+
+.cadastro-box2 a img {
+
+    width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    h2 {
+
+        font-size: 3em;
+    }
+
+    section {
+
+        width: 90%;
+    }
+
+    .desenho-cadastro {
+
+        justify-content: space-between;
+    }
+
+    .botao-cadastro {
+        font-size: 1.5em;
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        h2 {
+    
+            font-size: 3em;
+        }
+    
+    
+        .desenho-cadastro {
+    
+            justify-content: space-between;
+        }
+
+        .desenho {
+
+        }
+
+        .cadastro {
+            width: 40%;
+        }
+    
+        .botao-cadastro {
+            font-size: 1.5em;
+        }
+
+
+}
+
+
+
+
+
+
+
+
+ 
+
+
+

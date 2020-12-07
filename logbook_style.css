@@ -41,7 +41,6 @@ header:before {
 
     display: flex;
     justify-content: space-between;
-   
 }
 
 .nav-list {
@@ -260,11 +259,10 @@ article {
 
 article h3{
 
-    margin-bottom: 4em ;
+    margin: 4em 0;
 }
 
 .cards-container {
-
    
     width: 90%;
     margin: auto;
@@ -308,6 +306,84 @@ article h3{
     color: white;
     margin-top: 1em;
 
+}
+
+
+.text-figure {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 20em auto;
+
+}
+
+.text {
+
+    width: 50%;
+   
+}
+
+.text p {
+
+    font-size: 1.2em;
+    margin: 1em auto;
+    color: #727D83;
+}
+
+.text ul li {
+
+    font-size: 1.2em;
+    color: #727D83;
+    margin-left: 1em;
+    line-height: 3;
+
+}
+
+.botao {
+
+    border: none;
+    width: 50%;
+    height: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    background-color:  #148260;
+    align-self: center;
+    box-shadow: 0px 7px 0px 0px rgba(232,235,237,1);
+    position: relative;
+    transition: .5s;
+
+}
+
+.botao:hover {
+
+    box-shadow: 0px 7px 0px 0px rgb(142, 147, 150);
+    cursor: pointer;
+}
+
+.figure {
+
+    width: 40%;
+}
+
+.imagem {
+
+    width: 100%;
+    height: 700px;
+    background-image: url(imagens/estudo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+
+    width: 100%;
+    height: 40em;
+    background-color: #148260;
 }
 
 
@@ -359,12 +435,18 @@ article h3{
 
         .cards-container {
 
-            width: 100%;
+           
         }
 
 
 }
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 870px) {
+
+    .nav {
+
+        display: none;
+      }
 
     .card {
 
@@ -392,10 +474,31 @@ article h3{
     }
     
 
+      .text-figure {
 
+        margin: 10em auto;
 
+    }
 
+      .figure {
+
+        width: 50%;
+      }
+      .text p, .text ul{
+          font-size: .8em;
+      }
+
+      .text ul li { 
+        line-height: 2;
+    }
 }
+
+@media only screen and (max-width: 625px) {
+
+ 
+    
+}
+
 
 
 

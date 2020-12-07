@@ -327,6 +327,11 @@ article h3{
 
 }
 
+.reverse {
+
+    flex-direction: row-reverse;
+}
+
 .text {
 
     width: 50%;
@@ -479,7 +484,6 @@ footer p {
 
         .cards-container {
 
-           
         }
 
         .footer-img {
@@ -487,7 +491,6 @@ footer p {
             width: 70%;
             margin: 0 15%;
         }
-
 
 }
 

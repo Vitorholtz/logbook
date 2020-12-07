@@ -35,6 +35,7 @@ header:before {
 
 .logo img {
     width: 3.5em;
+    
 }
 
 .nav {
@@ -153,6 +154,8 @@ section {
 
 .desenho img {
 
+    margin-top: 3em;
+
 }
 
 .cadastro {
@@ -249,17 +252,18 @@ article {
 
     width: 100%;
     height: auto;
-    padding: 5em 0;
+    padding: 0 0 5em 0 ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #E5ECF0;
+    border-bottom: 20px #148260 solid;
 }
 
 article h3{
 
-    margin: 4em 0;
+    margin: 3em 0;
 }
 
 .cards-container {
@@ -372,19 +376,58 @@ article h3{
 .imagem {
 
     width: 100%;
-    height: 700px;
+    height: 500px;
     background-image: url(imagens/estudo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-bottom: 20px #E5ECF0 solid;
 }
 
 footer{
 
     width: 100%;
-    height: 40em;
+    height: auto;
     background-color: #148260;
+    padding: 2em 0 ;
+  
 }
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+
+    width: 15em;
+    height: 12em;
+    margin-left: 1em;
+    align-self: center;
+
+}
+
+footer p {
+
+    color: white;
+   
+}
+
+.inc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img{
+
+    width: 50%;
+    margin: 0 25%;
+    transform: translateY(.3em);
+}
+
 
 
 @media only screen and (max-width: 1400px) {
@@ -410,11 +453,6 @@ footer{
 
     @media only screen and (max-width: 1200px) {
 
-        h2 {
-    
-            font-size: 3em;
-        }
-    
     
         .desenho-cadastro {
     
@@ -442,6 +480,20 @@ footer{
 }
 
 @media only screen and (max-width: 870px) {
+
+    h2 {
+
+        font-size: 2em;
+
+
+    }
+
+    h3 {
+
+        font-size: 1.5em;
+
+
+    }
 
     .nav {
 

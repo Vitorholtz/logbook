@@ -518,6 +518,11 @@ footer p {
         display: none;
     }
 
+    .logo2 {
+
+        width: 70%;
+    }
+
 
   
       header::before{

@@ -508,26 +508,18 @@ footer p {
 
     }
 
-    .hamburger {
-        display: block;
-        font-size: 3em;
+    .nav {
+
+        align-items: center;
+        padding-left: 3em;
     }
 
     .logo {
-
         display: none;
     }
 
-    .nav-link {
 
-        display: none;
-      }
-
-      .active {
-
-        display: none;
-      }
-
+  
       header::before{
 
         display: none;
@@ -591,6 +583,27 @@ footer p {
 
         font-size: 2.5em;
     }
+
+    .hamburger {
+        display: block;
+        font-size: 3em;
+    }
+
+    .logo {
+
+        display: none;
+    }
+
+    .nav-link {
+
+        display: none;
+      }
+
+      .active {
+
+        display: none;
+      }
+
 
     
     .desenho-cadastro {

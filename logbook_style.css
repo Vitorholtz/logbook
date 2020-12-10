@@ -33,11 +33,6 @@ header:before {
 
 }
 
-.hamburger {
-    display: none;
-}
-
-
 
 .logo img {
     width: 3.5em;
@@ -98,6 +93,24 @@ header:before {
     border-radius: 50px;
     z-index: -1;
 }
+
+.burger {
+
+    cursor: pointer;
+    display: none;
+   
+}
+
+.burger div {
+
+    width: 30px;
+    height: 2px;
+    background-color: rgb(116, 116, 116);
+    margin: 7px;
+
+}
+
+
 
 /*Conteúdo top*/
 
@@ -499,13 +512,11 @@ footer p {
     h2 {
 
         font-size: 2em;
-
     }
 
     h3 {
 
         font-size: 1.5em;
-
     }
 
     .nav {
@@ -583,32 +594,107 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
+
+    body {
+
+        overflow-x: hidden;
+    }
     
     h2 {
 
         font-size: 2.5em;
     }
 
-    .hamburger {
-        display: block;
-        font-size: 3em;
-    }
 
     .logo {
 
         display: none;
     }
 
+    header {
+
+        padding: 0;
+    }
+
+    .nav {
+
+        padding: 0;
+
+    }
+
+    .nav-list {
+
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100%;
+        line-height: 3em;
+        font-size: 3em;
+        font-weight: bold;
+        padding-top: 2em;
+        transform: translatex(-100%);
+        display: none;
+        transition: transform .5s ease-in-out;
+    ;
+
+    }
+
+    .nav-list-active {
+
+        transform: translatex(0%);
+        display: flex;
+        
+    }
+
+    .nav-item {
+
+        margin: 0;
+        border-bottom: 1px gray  solid
+    }
+
     .nav-link {
-
-        display: none;
+        
+  
       }
 
-      .active {
+      .nav-list .active a {
 
-        display: none;
+        color:gray;
       }
 
+      .nav-list .active a:hover {
+
+        color:#148260;
+      }
+
+
+      .active::before {
+
+        display: none;
+        
+      }
+
+
+      .burger {
+
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+
+       
+    }
+    
+    .burger div {
+    
+        width: 30px;
+        height: 2px;
+        background-color: rgb(116, 116, 116);
+        margin: 7px;
+    
+    }
+    
 
     
     .desenho-cadastro {
